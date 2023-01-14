@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import CityLogo from '../assets/city.svg'
 
 export default function Home() {
   return (
