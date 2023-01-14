@@ -224,7 +224,7 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/font@13.1.2":
+"@next/font@^13.1.2":
   "integrity" "sha512-NXGXGFGiOKEnvBIHq9cdFTKbHO2/4B3Zd9K27M7j1DioIQVar7oVRqZMYs0h3XMVEZLwjjkdAtqRPCzzd3RtXg=="
   "resolved" "https://registry.npmjs.org/@next/font/-/font-13.1.2.tgz"
   "version" "13.1.2"
