@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import MainSection from '../components/Home/mainSection/mainSection'
 
 export default function Home() {
   return (
@@ -6,7 +7,9 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <h1>LPCTI</h1>
+      <body>
+      <MainSection />
+      </body>
     </>
   )
 }
