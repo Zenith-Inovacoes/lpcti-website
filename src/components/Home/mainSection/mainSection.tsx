@@ -1,17 +1,24 @@
 import * as S from './mainSection-styles';
-import city
+import Typography from '@/components/Typography/Typography';
+import fotinha from '../../../assets/images/city.svg';
+import Image from 'next/image';
+
 
 export default function asedas() {
-    return(
+    return (
         <S.background>
+            <S.skewAjust></S.skewAjust>
             <S.sectionBackground>
-             <S.mainText>
-                 Laboratório Paraense de Cidades e Tecnologias Inteligentes 
-             </S.mainText>
-             <S.subtitleText>
-             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-             consequat duis enim velit mollit. Exercitation veniam ...
-             </S.subtitleText>
+                <S.divText>
+                    <Typography variant='h4' color='#FFF'>
+                        Laboratório <Typography variant='h4' color='#00C0F0'> Paraense</Typography> de <Typography variant='h4' color='#00C0F0'>Cidades</Typography> e <Typography variant='h4' color='#00C0F0'>Tecnologias</Typography> Inteligentes
+                    </Typography>
+                    <Typography variant='h6' weight='100' color='#FFF'>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam ...
+                    </Typography>
+                </S.divText>
+                <Image style={{ transform: 'skewY(30deg)', alignSelf: 'center' }} width={400} alt='cidade isométrica' src={fotinha}></Image>
             </S.sectionBackground>
         </S.background>
     );
