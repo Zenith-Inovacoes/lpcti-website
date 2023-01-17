@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import SectionTitle from '@/components/SectionTitle/SectionTitle'
+import Typography from '@/components/Typography/Typography'
 
 export default function Home() {
   return (
@@ -6,7 +8,6 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <h1>LPCTI</h1>
     </>
   )
 }
