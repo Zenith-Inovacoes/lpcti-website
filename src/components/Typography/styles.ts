@@ -32,5 +32,6 @@ export const TypographyRoot = styled.span<props>`
     font-weight: ${props => props.weight};
     font-size: ${props => handlePropsVariant(props.variant)};
     font-family: ${inter.style.fontFamily};
-    color: ${props => props.color == undefined ? 'black' : props.color}
+    color: ${props => props.color == undefined ? 'black' : props.color};   
+    margin: 5px 0px;
 `
