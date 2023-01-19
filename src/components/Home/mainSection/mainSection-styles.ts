@@ -1,11 +1,14 @@
 import styled from "styled-components"
 import * as S from "@/components/Typography/styles"
+import fotinha from '../../../assets/images/city.svg';
+import Image from 'next/image';
 
 export const sectionBackground = styled.div`
 transform: skewY(-30deg);
-background-image: linear-gradient(to right, #161957, #9400E7);
+background: rgb(22,25,87);
+background: linear-gradient(90deg, rgba(22,25,87,1) 0%, rgba(9,9,121,1) 14%, rgba(148,0,231,1) 100%);
 width: 100%;
-height: 70%;
+height: 100%;
 display: flex;
 flex-direction: column;
 padding-top: 4rem;
@@ -15,7 +18,7 @@ align-items: center;
 `
 export const divText = styled.div`
 align-content: center;
-width: 21.875rem;
+min-width: 21.875rem;
 margin: 2.5rem;
 margin-bottom: 2rem;
 > ${S.TypographyRoot} {
@@ -29,12 +32,19 @@ background-color: white;
 width: 100%;
 height: 100%;
 `
- export const skewAjust = styled.div`
+export const skewAjust = styled.div`
 position: absolute;
-background-image: linear-gradient(to right, #161957, #9400E7);
+background: rgb(22,25,87);
+background: linear-gradient(90deg, rgba(22,25,87,1) 0%, rgba(9,9,121,1) 14%, rgba(148,0,231,1) 100%);
 height:300px;
 width:100%;
 right: 0%;
 top: 0%;
 z-index:0;
+`
+export const divImg = styled.div`
+width: 100%;
+transform: skewY(30deg);
+margin: 2.5rem;
+justify-content: center;
 `

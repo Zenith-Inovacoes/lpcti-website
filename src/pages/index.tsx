@@ -9,9 +9,7 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <body>
       <MainSection />
-      </body>
     </>
   )
 }
