@@ -2,9 +2,11 @@ import * as S from './mainSection-styles';
 import Typography from '@/components/Typography/Typography';
 import fotinha from '../../../assets/images/city.svg';
 import Image from 'next/image';
+import { useEffect } from 'react';
 
 
 export default function MainSection() {
+    
     return (
         <S.background>
             <S.skewAjust></S.skewAjust>
@@ -18,7 +20,7 @@ export default function MainSection() {
                         consequat duis enim velit mollit. Exercitation veniam ...
                     </Typography>
                 </S.divText>
-                <Image alt='cidade isométrica' src={fotinha}></Image>
+                <Image alt='cidade isométrica' src={fotinha} ></Image>
             </S.sectionBackground>
         </S.background>
     );
