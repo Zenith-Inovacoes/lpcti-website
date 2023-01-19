@@ -4,7 +4,7 @@ import fotinha from '../../../assets/images/city.svg';
 import Image from 'next/image';
 
 
-export default function asedas() {
+export default function MainSection() {
     return (
         <S.background>
             <S.skewAjust></S.skewAjust>
