@@ -1,13 +1,16 @@
 import Head from 'next/head'
+import About from '@/components/Home/About/About'
 import MainSection from '../components/Home/mainSection/mainSection'
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
 import Typography from '@/components/Typography/Typography'
+import Card from '@/components/Card/Card'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>LPCTI</title>
       </Head>
       <MainSection />
     </>
