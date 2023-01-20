@@ -24,5 +24,13 @@ display: flex;
 justify-content: center;
 `
 export const divImage = styled.div`
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+> img:not(:first-child) {
+  position: absolute;
+}
 `
 
