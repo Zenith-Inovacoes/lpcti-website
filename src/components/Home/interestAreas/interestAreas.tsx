@@ -12,7 +12,7 @@ export default function InterestAreas() {
         <S.background>
             <S.divText>
                 <Typography variant='h4' color='#29156D'>
-                    Aréas de <Typography variant='h4' color='#00C0F0' display='inline'> interesse</Typography>
+                    Áreas de <Typography variant='h4' color='#00C0F0' display='inline'> interesse</Typography>
                 </Typography>
                 <Typography variant='h6' weight='100' color='#29156D'>
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
