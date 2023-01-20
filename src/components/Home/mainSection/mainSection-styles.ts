@@ -22,9 +22,9 @@ export const sectionBackground = styled.div`
   align-items: center;
   > img {
     position: absolute;
-    width: calc(500px + 20%);
     height: auto;
-    bottom: -20rem;
+    width: calc(60% + 100px);
+    bottom: -30%;
     transform: skewY(30deg);
   }
 `;
