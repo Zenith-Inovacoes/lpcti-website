@@ -2,6 +2,8 @@ import * as S from './interestAreas-styles';
 import Typography from '@/components/Typography/Typography';
 import Card from '@/components/Card/Card';
 import cicleCard from '@/assets/images/tech-circle.svg'
+import userIcon from '@/assets/icons/user-icon.svg'
+import userBackground from '@/assets/images/userBackground.svg'
 import Image from 'next/image';
 
 export default function InterestAreas() {
@@ -17,13 +19,19 @@ export default function InterestAreas() {
                         consequat duis enim velit mollit. Exercitation veniam ...
                     </Typography>
             </S.divText>
+            <S.cardPosition>
             <Card.Root variant='primary'>
-            <Image alt='cidade isométrica' src={cicleCard} ></Image>
+                <S.divImage> 
+            <Image alt='tech circle' src={cicleCard} ></Image>
+            <Image alt='background' src={userBackground}></Image>
+            <Image alt='user icon' src={userIcon}></Image>
+            </S.divImage>
             <Typography variant='h6' weight='100' color='#29156D'>
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
                         consequat duis enim velit mollit. Exercitation veniam ...
                     </Typography>
             </Card.Root>
+            </S.cardPosition>
         </S.background>
     );
 }
