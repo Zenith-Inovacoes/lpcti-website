@@ -4,19 +4,7 @@ import * as S from '@/components/Typography/styles'
 export const background = styled.div`
   width: 100%;
   height: auto;
-  padding-top: 11rem;
-`;
-
-export const divText = styled.div`
-  align-content: center;
-  text-align: center;
-  min-width: 21.875rem;
-  margin: 2.5rem;
-  margin-bottom: 0;
-  > ${S.TypographyRoot} {
-    display: inline-block;
-    margin: 20px 0;
-}
+  background-color: #D9D9D9;
 `;
 
 export const cardPosition = styled.div`
@@ -24,5 +12,20 @@ display: flex;
 justify-content: center;
 `
 export const divImage = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:center;
 `
-
+export const zenithImage = styled.div`
+> img {
+   height: auto;
+    width: 100%;
+  }
+`
+export const cesupaImage = styled.div`
+> img {
+    height: auto;
+    width: 100%;
+  }
+`

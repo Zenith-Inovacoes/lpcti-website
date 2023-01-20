@@ -2,6 +2,7 @@ import Head from 'next/head'
 import About from '@/components/Home/About/About'
 import MainSection from '../components/Home/mainSection/mainSection'
 import InterestAreas from '../components/Home/interestAreas/interestAreas'
+import PartnersArea from '../components/Home/partners/partners'
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
 import Typography from '@/components/Typography/Typography'
 import Card from '@/components/Card/Card'
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <MainSection />
       <InterestAreas />
+      <PartnersArea />
     </>
   )
 }
