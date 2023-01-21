@@ -1,7 +1,7 @@
 import * as S from './partners-styles';
 import Typography from '@/components/Typography/Typography';
 import zenithLogo from '@/assets/images/IOT_Zenith_Logo_Sketch 300x300.png'
-import SectionTitle from '@/components/SectionTitle/Index';
+import SectionTitle from '@/components/SectionTitle';
 import Image from 'next/image';
 
 export default function PartnersArea() {
