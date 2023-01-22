@@ -11,6 +11,7 @@ export const About = styled.div`
   background-color: #161957;
   padding: 50px 40px 20px 40px;
   transform: skewY(-5deg);
+  margin-bottom: 60px;
   > * {
     transform: skewY(5deg);
   }

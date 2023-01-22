@@ -10,7 +10,6 @@ import Card from '@/components/Card/Card'
 import Button from '@/components/Button'
 
 import Image from 'next/image'
-import InstagramIcon from '@/assets/icons/instagram-fill.svg'
 import Link from '@/components/Link'
 
 export default function Home() {
@@ -21,6 +20,7 @@ export default function Home() {
       </Head>
       <MainSection />
       <InterestAreas />
+      <About />
       <PartnersArea />
       <ContactArea />
     </>
