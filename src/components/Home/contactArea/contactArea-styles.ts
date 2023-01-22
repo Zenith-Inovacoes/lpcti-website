@@ -6,6 +6,7 @@ export const background = styled.div`
   width: 100%;
   height: auto;
   background-color: #04051F;
+  padding-top: 20px;
 `
 
 export const contacts = styled.div`
