@@ -1,9 +1,8 @@
 import React from "react";
 import * as S from './styles';
-import { HamburguerProps } from "./types";
 import Typography from "@/components/Typography/Typography";
 
-function Hamburguer(props: HamburguerProps) {
+function Hamburguer() {
     return(
         <>
         <S.Input type="checkbox" id="active" />
