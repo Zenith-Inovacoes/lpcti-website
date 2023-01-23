@@ -11,13 +11,16 @@ import Button from '@/components/Button'
 
 import Image from 'next/image'
 import Link from '@/components/Link'
-
+import NavBar from '../components/Home/navbar/navbar'
+import Hamburguer from '@/components/Home/hamburguer/hamburguer'
 export default function Home() {
   return (
     <>
       <Head>
         <title>LPCTI</title>
       </Head>
+      <Hamburguer children={undefined}></Hamburguer>
+      <NavBar children={undefined}></NavBar>
       <MainSection />
       <InterestAreas />
       <About />
