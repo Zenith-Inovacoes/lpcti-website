@@ -11,11 +11,12 @@ ${css({
     margin: '0',
     clipPath: 'polygon(0 0, 100% 0, 100% 90%, 0 98%)',
     padding: '0',
-    position: 'absolute',
+    position: 'fixed',
     top: '0',
     alignItems: 'center',
     overflowX: 'hidden',
     overflowY: 'visible',
+    zIndex: '1000',
 })}
 `;
 

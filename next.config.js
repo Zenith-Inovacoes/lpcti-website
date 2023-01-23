@@ -9,3 +9,8 @@ module.exports = nextConfig
 module.exports = withImages({
   esModule: true,
 })
+module.exports = {
+  experimental: {
+    forceSwcTransforms: true,
+  },
+}

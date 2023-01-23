@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     background: #161957;
     transition: all 0.6s ease-in-out;
     transition-delay: .2s;
+    z-index: 1000;
     > ul {
         position: absolute;
         top: 60%;
@@ -55,8 +56,8 @@ export const Wrapper = styled.div`
 `
 
 export const menu_btn = styled.label`
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 1001;
     right: 20px;
     top: 20px;
     height: 50px;

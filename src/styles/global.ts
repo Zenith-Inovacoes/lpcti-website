@@ -29,6 +29,8 @@ export default createGlobalStyle`
     }
     body {
         line-height: 1;
+        min-height: 100vh;
+        min-width: 100vw;
     }
     ol, ul {
         list-style: none;
