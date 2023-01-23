@@ -32,7 +32,7 @@ export const About = styled.div`
 
   @media (min-width: 900px) {
     flex-direction: row;
-    padding: 20px 20px 0 20px;
+    padding: 20px 60px 0 60px;
     text-align: left;
     > img {
       width: 50%;
@@ -57,6 +57,10 @@ export const AboutText = styled.div`
   > ${S.TypographyRoot} {
     padding: 15px 0;
     line-height: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    width: 70%;
   }
 `;
 
