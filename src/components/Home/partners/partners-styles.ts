@@ -5,7 +5,11 @@ export const background = styled.div`
   width: 100%;
   height: auto;
   background-color: #D9D9D9;
-  padding-top: 1rem;
+  padding-top: 5rem;
+  
+  @media (min-width: 900px) {
+    padding-top: 8rem;
+  }
 `;
 export const divImage = styled.div`
 display: flex;
