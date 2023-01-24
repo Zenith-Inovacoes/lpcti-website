@@ -1,12 +1,10 @@
-import * as S from './mainSection-styles';
-import Typography from '@/components/Typography/Typography';
-import fotinha from '../../../assets/images/city.svg';
-import Image from 'next/image';
-import { useEffect } from 'react';
-
+import * as S from "./mainSection-styles";
+import Typography from "@/components/Typography/Typography";
+import fotinha from "../../../assets/images/Isometric City Recort.png";
+import Image from "next/image";
+import { useEffect } from "react";
 
 export default function MainSection() {
-    
     return (
         <S.background id='home'>
             <S.skewAjust></S.skewAjust>
@@ -26,3 +24,8 @@ export default function MainSection() {
     );
 }
 
+        <Image alt="cidade isométrica" src={fotinha} aspect-ratio={0.5}></Image>
+      </S.sectionBackground>
+    </S.background>
+  );
+}
