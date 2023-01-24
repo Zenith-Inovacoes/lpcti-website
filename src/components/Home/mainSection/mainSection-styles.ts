@@ -28,15 +28,16 @@ export const sectionBackground = styled.div`
     transform: skewY(30deg);
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 650px) {
     position: static;
     padding: 0%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     transform: skewY(-3deg);
     > img {
       width: 35vw;
-      transform: translateY(45%) translatex(calc(5vw)) skewY(3deg);
+      transform: translateY(45%) skewY(3deg);
       position: static;
     }
   }
@@ -65,11 +66,17 @@ export const divText = styled.div`
     display: inline-block;
     margin: 20px 0;
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     width: 30%;
     margin: 1rem;
+    margin-right: 3.5rem;
+    padding-top: 3.5rem;
     transform: skewY(3deg);
   }
+@media (min-width: 900px) {
+    display: flex;
+    flex-direction: row; 
+}
 `;
 
 export const background = styled.div`
@@ -90,7 +97,7 @@ export const skewAjust = styled.div`
   right: 0%;
   top: 0%;
   z-index: 0;
-  @media (min-width: 600px) {
+  @media (min-width: 650px) {
     height: 170px;
   }
 `;
