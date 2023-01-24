@@ -24,6 +24,8 @@ function fontSizeByVariant(variant: string): string {
       return "1.5rem";
     case "h6":
       return "1.25rem";
+    case "h7":
+        return "1rem";
     default:
       return "0.7rem";
   }

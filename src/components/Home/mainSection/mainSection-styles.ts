@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as S from '@/components/Typography/styles'
+import * as S from "@/components/Typography/styles";
 
 export const sectionBackground = styled.div`
   transform: skewY(-30deg);
@@ -46,10 +46,10 @@ export const sectionBackground = styled.div`
     padding: 0%;
     display: flex;
     flex-direction: row;
-    transform: skewY(-10deg);
+    transform: skewY(-3deg);
     > img {
-      width: calc(30% + 35px);
-      transform: translateY(45%) skewY(3deg);
+      width: calc(30% + 105px);
+      transform: translateY(35%) skewY(3deg);
       position: static;
     }
   }
@@ -65,18 +65,30 @@ export const divText = styled.div`
   > ${S.TypographyRoot} {
     display: inline-block;
     margin: 20px 0;
-}
-@media (min-width: 650px) {
+  }
+  @media (min-width: 650px) {
     width: 30%;
     margin: 1rem;
     margin-right: 3.5rem;
     padding-top: 3.5rem;
     transform: skewY(3deg);
   }
-@media (min-width: 900px) {
-    display: flex;
-    flex-direction: row; 
-}
+  @media (min-width: 900px) {
+    margin-right: calc(10vw);
+    transform: skewY(3deg);
+    width: 45vw !important;
+    > ${S.TypographyRoot}:first-child > ${S.TypographyRoot} {
+      text-align: left;
+      font-size: 2rem;
+    }
+    > ${S.TypographyRoot}:first-child {
+      text-align: left;
+      font-size: 2rem;
+    }
+    > ${S.TypographyRoot}:not(:first-child) {
+      text-align: left;
+    }
+  }
 `;
 
 export const background = styled.div`
