@@ -12,7 +12,7 @@ import Image from 'next/image';
 export default function ContactArea () {
 
     return (
-        <S.background>
+        <S.background id='contato'>
             <S.contacts>
                 <SectionTitle variant='secondary'>
                     <Typography variant='h4' color='#FFF' weight='550'>

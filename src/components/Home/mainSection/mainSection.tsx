@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 export default function MainSection() {
     
     return (
-        <S.background>
+        <S.background id='home'>
             <S.skewAjust></S.skewAjust>
             <S.sectionBackground>
                 <S.divText>

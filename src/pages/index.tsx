@@ -19,8 +19,8 @@ export default function Home() {
       <Head>
         <title>LPCTI</title>
       </Head>
-      <Hamburguer children={undefined}></Hamburguer>
-      <NavBar children={undefined}></NavBar>
+      <Hamburguer></Hamburguer>
+      <NavBar></NavBar>
       <MainSection />
       <InterestAreas />
       <About />
