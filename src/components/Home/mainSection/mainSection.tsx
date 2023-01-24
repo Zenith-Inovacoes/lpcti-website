@@ -18,14 +18,8 @@ export default function MainSection() {
                         consequat duis enim velit mollit. Exercitation veniam ...
                     </Typography>
                 </S.divText>
-                <Image alt='cidade isométrica' src={fotinha} ></Image>
+                <Image alt='cidade isométrica' src={fotinha} />
             </S.sectionBackground>
         </S.background>
     );
-}
-
-        <Image alt="cidade isométrica" src={fotinha} aspect-ratio={0.5}></Image>
-      </S.sectionBackground>
-    </S.background>
-  );
 }

@@ -31,7 +31,7 @@ export default createGlobalStyle`
     body {
         line-height: 1;
         min-height: 100vh;
-        min-width: 100vw;
+        overflow-x: hidden;
     }
     ol, ul {
         list-style: none;
