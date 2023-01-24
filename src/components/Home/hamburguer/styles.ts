@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
     }
     > ul li {
         height: 10%;
-        margin: 15px 0;
+        margin: 35px 0;
         text-align: center;
     }
     > ul li a {
@@ -53,6 +53,9 @@ export const Wrapper = styled.div`
             transition: transform 0.3s ease;
         }
     }
+    @media (min-width: 940px) {
+        display: none;
+    }
 `
 
 export const menu_btn = styled.label`
@@ -68,6 +71,9 @@ export const menu_btn = styled.label`
     font-size: 20px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    @media (min-width: 940px) {
+            display: none;
+        }
     > span, ::before, ::after {
         content: "";
         position: absolute;

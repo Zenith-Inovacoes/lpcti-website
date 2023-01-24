@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function PartnersArea() {
     
     return (
-        <S.background>
+        <S.background id='partners'>
             <SectionTitle>
             <Typography variant='h4' color='#29156D'>
                 Nossos <Typography variant='h4' color='#0696CA' display='inline'>Parceiros</Typography>

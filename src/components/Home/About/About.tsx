@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function About() {
     return (
-        <S.About>
+        <S.About id="about">
             <S.TextContainer>
                 <S.AboutText>
                     <Typography variant="h2" color="#FFF">
