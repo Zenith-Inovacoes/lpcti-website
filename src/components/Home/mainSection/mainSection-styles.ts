@@ -49,7 +49,7 @@ export const sectionBackground = styled.div`
     transform: skewY(-3deg);
     > img {
       width: calc(30% + 105px);
-      transform: translateY(35%) skewY(3deg);
+      transform: translateY(30%) skewY(3deg);
       position: static;
     }
   }
@@ -87,6 +87,24 @@ export const divText = styled.div`
     }
     > ${S.TypographyRoot}:not(:first-child) {
       text-align: left;
+    }
+  }
+  @media (min-width: 1400px) {
+    margin-right: calc(10vw);
+    transform: skewY(3deg);
+    max-width: 40vw;
+    width: 45vw !important;
+    > ${S.TypographyRoot}:first-child > ${S.TypographyRoot} {
+      text-align: left;
+      font-size: 3rem;
+    }
+    > ${S.TypographyRoot}:first-child {
+      text-align: left;
+      font-size: 3rem;
+    }
+    > ${S.TypographyRoot}:not(:first-child) {
+      text-align: left;
+      font-size: 1.2rem;
     }
   }
 `;
