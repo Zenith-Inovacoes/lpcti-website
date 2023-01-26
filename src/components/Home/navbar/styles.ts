@@ -27,6 +27,7 @@ export const Container = styled.nav`
     }
     display: none;
     
+    
   }
   > ul li {
     align-items: center;
@@ -38,6 +39,9 @@ export const Container = styled.nav`
   }
   > ul li a {
     text-decoration: none;
+  }
+  > ul li a p {
+    transition: all ease-in-out .2s;
   }
   > ul li a :hover{
     color: #00C0F0;
