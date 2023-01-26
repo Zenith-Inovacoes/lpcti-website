@@ -23,6 +23,7 @@ export const Wrapper = styled.div`
         height: 10%;
         margin: 35px 0;
         text-align: center;
+        
     }
     > ul li a {
         text-decoration: none;
@@ -32,7 +33,6 @@ export const Wrapper = styled.div`
         color: #fff;
         border-radius: 50px;
         position: absolute;
-        margin: 5px 30px;
         opacity: 0;
         transition: all 0.875s ease;
         transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -77,7 +77,7 @@ export const menu_btn = styled.label`
     > span, ::before, ::after {
         content: "";
         position: absolute;
-        top: calc(50% - 1px);
+        top: calc(40% - 1px);
         left: 30%;
         width: 40%;
         border-bottom: 2px solid rgb(255, 252, 252);

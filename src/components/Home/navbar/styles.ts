@@ -3,7 +3,7 @@ import theme from "../../../styles/theme";
 
 export const Container = styled.nav`
   background-color: #161957;
-  height: 100px;
+  height: 82px;
   width: 100%;
   display: flex;
   margin: 0;
@@ -15,6 +15,9 @@ export const Container = styled.nav`
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 1000;
+  @media (min-width: 940px) {
+    height: 100px;
+  }
   > ul {
     @media (min-width: 940px) {
       position: absolute;
