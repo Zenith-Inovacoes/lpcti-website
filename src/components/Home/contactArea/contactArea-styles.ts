@@ -6,9 +6,9 @@ export const background = styled.div`
   width: 100%;
   height: auto;
   background-color: #04051F;
-  padding-top: 20px;
 `
 export const divRow = styled.div`
+padding: 2rem;
 @media (min-width: 900px) {
   display: flex;
  flex-direction: row-reverse;
@@ -33,11 +33,18 @@ justify-content: center;
 align-items: center;
 padding: 1.5rem;
 > img {
-    width: 45vw;
+    width: calc(45% + 50px);
+    height: 50%;
   }
+@media (min-width: 600px) {
+  > img {
+    width: calc(30% + 70px);
+  }
+}
 @media (min-width: 900px) {
 > img {
-    width: 35vw;
+    width: 23vw;
+    height: auto;
   }
 }
 `
@@ -68,6 +75,14 @@ margin: 0.5rem;
 }
 > a {
   text-decoration: none;
+}
+@media (min-width: 900px){
+  > a {
+  > ${S.TypographyRoot} {
+      text-align: left;
+      font-size: 1rem;
+}
+}
 }
 `
 

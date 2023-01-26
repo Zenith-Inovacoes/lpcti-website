@@ -15,11 +15,6 @@ export default function ContactArea () {
         <S.background id='contato'>
           <S.divRow>
             <S.contacts>
-                <SectionTitle variant='secondary'>
-                    <Typography variant='h4' color='#FFF' weight='550'>
-                        Contato
-                    </Typography>
-                </SectionTitle>
                 <S.typeContactsColumn>
                     <S.typeContactsRow>
                         <Image alt='ícone de e-mail' src={mail} />
