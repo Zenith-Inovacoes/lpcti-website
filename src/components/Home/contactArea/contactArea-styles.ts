@@ -34,11 +34,6 @@ justify-content: center;
 > img:not(:first-child) {
   position: absolute;
 }
-@media (max-width: 900px) {
-> img {
-    width: 50vw;
-  }
-}
 @media (min-width: 900px) {
 > img {
     width: 30vw;

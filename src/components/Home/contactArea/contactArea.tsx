@@ -36,7 +36,7 @@ export default function ContactArea () {
                 </S.typeContactsColumn>
             </S.contacts>
             <S.divImage>
-                <Image alt='Logo do Laboratório' src={wlpcti} />
+                <Image alt='Logo do Laboratório' src={wlpcti} width={300}/>
             </S.divImage>
             </S.divRow>
             <S.authors>
