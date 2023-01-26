@@ -22,7 +22,7 @@ export default function ContactArea () {
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <Image alt='ícone de mapa' src={geo} /> 
-                        <a href="https://goo.gl/maps/oocn4UqYoXE63fN46"><Typography variant='h6' color='#FFF'>Av. Alcindo Cacela, 1523</Typography></a>
+                        <a target="_blank" href="https://goo.gl/maps/oocn4UqYoXE63fN46"><Typography variant='h6' color='#FFF'>Av. Alcindo Cacela, 1523</Typography></a>
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <Image alt='ícone de telefone' src={phone} />
