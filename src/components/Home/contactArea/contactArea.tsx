@@ -6,19 +6,15 @@ import mail from '@/assets/icons/envelope-fill.svg'
 import phone from '@/assets/icons/phone-fill.svg'
 import geo from '@/assets/icons/geo-alt-fill.svg'
 import SectionTitle from '@/components/SectionTitle';
-import wlpcti from '@/assets/images/lpcti-white.svg'
+import wlpcti from '@/assets/images/LPCTI WHITE.png'
 import Image from 'next/image';
 
 export default function ContactArea () {
 
     return (
         <S.background id='contato'>
+          <S.divRow>
             <S.contacts>
-                <SectionTitle variant='secondary'>
-                    <Typography variant='h4' color='#FFF' weight='550'>
-                        Contato
-                    </Typography>
-                </SectionTitle>
                 <S.typeContactsColumn>
                     <S.typeContactsRow>
                         <Image alt='ícone de e-mail' src={mail} />
@@ -26,7 +22,7 @@ export default function ContactArea () {
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <Image alt='ícone de mapa' src={geo} /> 
-                        <a href="https://goo.gl/maps/oocn4UqYoXE63fN46"><Typography variant='h6' color='#FFF'>Av. Alcindo Cacela, 1523</Typography></a>
+                        <a target="_blank" href="https://goo.gl/maps/oocn4UqYoXE63fN46"><Typography variant='h6' color='#FFF'>Av. Alcindo Cacela, 1523</Typography></a>
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <Image alt='ícone de telefone' src={phone} />
@@ -35,8 +31,9 @@ export default function ContactArea () {
                 </S.typeContactsColumn>
             </S.contacts>
             <S.divImage>
-                <Image alt='Logo do Laboratório' src={wlpcti} width={250} />
+                <Image alt='Logo do Laboratório' src={wlpcti} />
             </S.divImage>
+            </S.divRow>
             <S.authors>
                 <Typography variant='p' color='#FFF'>
                     2023 © ZENITH. Todos os direitos reservados
