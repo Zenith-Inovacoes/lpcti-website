@@ -23,9 +23,3 @@ export default function MainSection() {
         </S.background>
     );
 }
-
-        <Image alt="cidade isométrica" src={fotinha} aspect-ratio={0.5}></Image>
-      </S.sectionBackground>
-    </S.background>
-  );
-}
