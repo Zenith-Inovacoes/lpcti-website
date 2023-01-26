@@ -27,16 +27,17 @@ justify-content: center;
 }
 `
 export const divImage = styled.div`
-position: relative;
 width: 100%;
 display: flex;
 justify-content: center;
-> img:not(:first-child) {
-  position: absolute;
-}
+align-items: center;
+padding: 1.5rem;
+> img {
+    width: 45vw;
+  }
 @media (min-width: 900px) {
 > img {
-    width: 30vw;
+    width: 35vw;
   }
 }
 `

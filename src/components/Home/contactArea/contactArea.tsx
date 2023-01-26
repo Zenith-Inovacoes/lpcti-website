@@ -6,7 +6,7 @@ import mail from '@/assets/icons/envelope-fill.svg'
 import phone from '@/assets/icons/phone-fill.svg'
 import geo from '@/assets/icons/geo-alt-fill.svg'
 import SectionTitle from '@/components/SectionTitle';
-import wlpcti from '@/assets/images/lpcti-white.svg'
+import wlpcti from '@/assets/images/LPCTI WHITE.png'
 import Image from 'next/image';
 
 export default function ContactArea () {
@@ -36,7 +36,7 @@ export default function ContactArea () {
                 </S.typeContactsColumn>
             </S.contacts>
             <S.divImage>
-                <Image alt='Logo do Laboratório' src={wlpcti} width={300}/>
+                <Image alt='Logo do Laboratório' src={wlpcti} />
             </S.divImage>
             </S.divRow>
             <S.authors>
