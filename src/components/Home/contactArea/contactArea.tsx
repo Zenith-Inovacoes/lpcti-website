@@ -13,6 +13,7 @@ export default function ContactArea () {
 
     return (
         <S.background id='contato'>
+          <S.divRow>
             <S.contacts>
                 <SectionTitle variant='secondary'>
                     <Typography variant='h4' color='#FFF' weight='550'>
@@ -35,8 +36,9 @@ export default function ContactArea () {
                 </S.typeContactsColumn>
             </S.contacts>
             <S.divImage>
-                <Image alt='Logo do Laboratório' src={wlpcti} width={250} />
+                <Image alt='Logo do Laboratório' src={wlpcti} />
             </S.divImage>
+            </S.divRow>
             <S.authors>
                 <Typography variant='p' color='#FFF'>
                     2023 © ZENITH. Todos os direitos reservados
