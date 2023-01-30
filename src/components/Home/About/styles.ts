@@ -18,7 +18,7 @@ export const About = styled.div`
   }
 
   > img {
-    width: 80%;
+    width: 60%;
     height: auto;
   }
 
@@ -60,7 +60,9 @@ export const AboutText = styled.div`
   }
 
   @media (min-width: 1200px) {
-    width: 70%;
+    > ${S.TypographyRoot}:not(:first-child){
+    font-size: 1rem;}
+
   }
 `;
 
