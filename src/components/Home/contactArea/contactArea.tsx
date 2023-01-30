@@ -7,6 +7,9 @@ import phone from '@/assets/icons/phone-fill.svg'
 import geo from '@/assets/icons/geo-alt-fill.svg'
 import SectionTitle from '@/components/SectionTitle';
 import wlpcti from '@/assets/images/LPCTI WHITE.png'
+import { UilEnvelope } from '@iconscout/react-unicons'
+import { UilPhone } from '@iconscout/react-unicons'
+import { UilMapMarker } from '@iconscout/react-unicons'
 import Image from 'next/image';
 
 export default function ContactArea () {
@@ -17,15 +20,15 @@ export default function ContactArea () {
             <S.contacts>
                 <S.typeContactsColumn>
                     <S.typeContactsRow>
-                        <Image alt='ícone de e-mail' src={mail} />
+                        <UilEnvelope size={23} />
                         <a href="mailto:contato@lpcti.com"><Typography variant='h6' color='#FFF'>contato@lpcti.com</Typography></a>
                     </S.typeContactsRow>
                     <S.typeContactsRow>
-                        <Image alt='ícone de mapa' src={geo} /> 
+                        <UilMapMarker size={23}  /> 
                         <a target="_blank" href="https://goo.gl/maps/oocn4UqYoXE63fN46"><Typography variant='h6' color='#FFF'>Av. Alcindo Cacela, 1523</Typography></a>
                     </S.typeContactsRow>
                     <S.typeContactsRow>
-                        <Image alt='ícone de telefone' src={phone} />
+                        <UilPhone size={23} />
                         <a href="tel:91993040556"><Typography variant='h6' color='#FFF'>(91) 99304-0556</Typography></a>
                     </S.typeContactsRow>
                 </S.typeContactsColumn>

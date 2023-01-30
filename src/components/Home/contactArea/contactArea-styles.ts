@@ -43,7 +43,7 @@ padding: 1.5rem;
 }
 @media (min-width: 900px) {
 > img {
-    width: 23vw;
+    width: 18vw;
     height: auto;
   }
 }
@@ -70,11 +70,15 @@ flex-direction: row;
 align-items: center;
 justify-content: left;
 margin: 0.5rem;
-> img {
+> :first-child {
   margin-right: 1rem;
+  color: white;
 }
 > a {
   text-decoration: none;
+}
+:hover * {
+  color: #00C0F0;
 }
 @media (min-width: 900px){
   > a {
