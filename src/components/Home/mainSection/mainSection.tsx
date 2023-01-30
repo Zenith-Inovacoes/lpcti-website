@@ -14,7 +14,7 @@ export default function MainSection() {
                         Laboratório <Typography variant='h4' color='#00C0F0' display='inline'> Paraense</Typography> de <Typography variant='h4' color='#00C0F0' display='inline'>Cidades</Typography> e <Typography variant='h4' color='#00C0F0' display='inline'>Tecnologias</Typography> Inteligentes
                     </Typography>
                     <Typography variant='h6' weight='300' color='#FFF'>
-                    O poder da tecnologia para transformar cidades: a era das cidades inteligentes
+                    O poder da tecnologia para transformar cidades: <Typography variant="h6" weight="500" color="#00C0F0"> a era das cidades inteligentes</Typography>
                     </Typography>
                 </S.divText>
                 <Image alt='cidade isométrica' src={fotinha} />

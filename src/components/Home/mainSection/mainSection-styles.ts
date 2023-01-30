@@ -20,6 +20,7 @@ export const sectionBackground = styled.div`
   margin: 0;
   position: relative;
   align-items: center;
+
   > img {
     position: absolute;
     height: auto;
@@ -72,6 +73,7 @@ export const divText = styled.div`
     margin-right: 3.5rem;
     padding-top: 3.5rem;
     transform: skewY(3deg);
+    text-align: left;
   }
   @media (min-width: 900px) {
     margin-right: calc(10vw);
