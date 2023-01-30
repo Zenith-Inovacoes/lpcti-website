@@ -18,7 +18,7 @@ export default function ContactArea () {
                 <S.typeContactsColumn>
                     <S.typeContactsRow>
                         <Image alt='ícone de e-mail' src={mail} />
-                        <a href="mailto:lucas19300206@aluno.cesupa.br"><Typography variant='h6' color='#FFF'>johndoe@email.com</Typography></a>
+                        <a href="mailto:contato@lpcti.com"><Typography variant='h6' color='#FFF'>contato@lpcti.com</Typography></a>
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <Image alt='ícone de mapa' src={geo} /> 
@@ -26,7 +26,7 @@ export default function ContactArea () {
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <Image alt='ícone de telefone' src={phone} />
-                        <a href="tel:91991812930"><Typography variant='h6' color='#FFF'>(91) 99999 - 9999</Typography></a>
+                        <a href="tel:91993040556"><Typography variant='h6' color='#FFF'>(91) 99304-0556</Typography></a>
                     </S.typeContactsRow>
                 </S.typeContactsColumn>
             </S.contacts>
