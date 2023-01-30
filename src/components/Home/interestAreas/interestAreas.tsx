@@ -13,7 +13,7 @@ import Image from 'next/image';
 export default function InterestAreas () {
 
     return (
-        <S.background>
+        <S.background id='interestAreas'>
             <S.iotImg>
                 <Image alt='Imagem de pontos que simbolizam linhas de conexão' src={iot2} />
                 <Image alt='Imagem de pontos que simbolizam linhas de conexão' src={iot} />
