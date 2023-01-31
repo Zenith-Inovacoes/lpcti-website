@@ -57,12 +57,16 @@ export const AboutText = styled.div`
   > ${S.TypographyRoot} {
     padding: 15px 0;
     line-height: 1.5rem;
+
+    > em {
+      color: #00c0f0;
+    }
   }
 
   @media (min-width: 1200px) {
-    > ${S.TypographyRoot}:not(:first-child){
-    font-size: 1rem;}
-
+    > ${S.TypographyRoot}:not(:first-child) {
+      font-size: 1rem;
+    }
   }
 `;
 

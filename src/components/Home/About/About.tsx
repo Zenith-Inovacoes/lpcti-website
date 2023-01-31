@@ -9,7 +9,7 @@ export default function About() {
             <S.TextContainer>
                 <S.AboutText>
                     <Typography variant="h2" color="#FFF">
-                        Sobre <Typography variant="h2" color="#00B9E9" display="inline">nós</Typography>
+                        Sobre <em>nós</em>
                     </Typography>
                     <Typography variant="p" color="#FFF" weight="100">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud.

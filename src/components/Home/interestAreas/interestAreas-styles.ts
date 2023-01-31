@@ -23,6 +23,10 @@ export const divText = styled.div`
     display: inline-block;
     margin: 20px 0;
     text-align: center;
+
+    > em {
+      color: #00C0F0;
+    }
   }
   @media (min-width: 820px) {
     margin: 30px 0;

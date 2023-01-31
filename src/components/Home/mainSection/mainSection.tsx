@@ -11,10 +11,10 @@ export default function MainSection() {
             <S.sectionBackground>
                 <S.divText>
                     <Typography variant='h4' color='#FFF'>
-                        Laboratório <Typography variant='h4' color='#00C0F0' display='inline'> Paraense</Typography> de <Typography variant='h4' color='#00C0F0' display='inline'>Cidades</Typography> e <Typography variant='h4' color='#00C0F0' display='inline'>Tecnologias</Typography> Inteligentes
+                        Laboratório <em>Paraense</em> de <em>Cidades</em> e <em>Tecnologias</em> Inteligentes
                     </Typography>
                     <Typography variant='h6' weight='300' color='#FFF'>
-                    O poder da tecnologia para transformar cidades: <Typography variant="h6" weight="500" color="#00C0F0" display="inline"> a era das cidades inteligentes</Typography>
+                    O poder da tecnologia para transformar cidades: <em> a era das cidades inteligentes</em>
                     </Typography>
                 </S.divText>
                 <Image alt='cidade isométrica' src={fotinha} />
@@ -22,3 +22,5 @@ export default function MainSection() {
         </S.background>
     );
 }
+
+// #00C0F0

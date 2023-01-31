@@ -24,7 +24,7 @@ export default function InterestAreas () {
             </S.iotImgMax>
             <S.divText>
                 <Typography variant='h4' color='#29156D'>
-                    Áreas de <Typography variant='h4' color='#00C0F0' display='inline'> interesse</Typography>
+                    Áreas de <em> interesse</em>
                 </Typography>
             </S.divText>
             <S.cardPosition>

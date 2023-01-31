@@ -66,6 +66,10 @@ export const divText = styled.div`
   > ${S.TypographyRoot} {
     display: inline-block;
     margin: 20px 0;
+
+    > em {
+      color: #00C0F0;
+    }
   }
   @media (min-width: 650px) {
     width: 30%;

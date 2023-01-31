@@ -10,7 +10,7 @@ export default function PartnersArea() {
         <S.background id='partners'>
             <SectionTitle>
             <Typography variant='h4' color='#29156D'>
-                Nossos <Typography variant='h4' color='#0696CA' display='inline'>Parceiros</Typography>
+                Nossos <em>Parceiros</em>
             </Typography>
             </SectionTitle>
             <S.divImage>
