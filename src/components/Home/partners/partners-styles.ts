@@ -4,7 +4,7 @@ import * as S from "@/components/Typography/styles";
 export const background = styled.div`
   width: 100%;
   height: auto;
-  background-color: #d9d9d9;
+  background-color: #fff;
   padding-top: 5rem;
 
   @media (min-width: 900px) {
@@ -19,11 +19,21 @@ export const divImage = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+
 `;
 export const zenithImage = styled.div`
   > img {
     height: auto;
     width: 100%;
+    filter: contrast(0.1);
+  }
+`;
+
+export const cesupaImage = styled.div`
+  > img {
+    height: 50px;
+    width: 100%;
+    filter: contrast(0.1);
   }
 `;

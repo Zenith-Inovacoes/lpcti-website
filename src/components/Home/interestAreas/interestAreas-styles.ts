@@ -11,6 +11,10 @@ export const background = styled.div`
   @media (min-width: 650px) {
     padding-top: 1rem;
   }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 `;
 
 export const divText = styled.div`
@@ -100,6 +104,16 @@ export const iotImgMax = styled.div`
 export const cardPosition = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+  @media (min-width: 950px) {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 `;
 export const divImage = styled.div`
   position: relative;

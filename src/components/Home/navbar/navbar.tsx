@@ -15,7 +15,7 @@ function NavBar() {
         <li>
           <a href="#home">
             <Typography variant="h6" weight="0" color="#fff">
-              Home
+              Início
             </Typography>
           </a>
         </li>
