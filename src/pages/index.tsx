@@ -18,6 +18,7 @@ export default function Home() {
     <>
       <Head>
         <title>LPCTI</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Hamburguer></Hamburguer>
       <NavBar></NavBar>

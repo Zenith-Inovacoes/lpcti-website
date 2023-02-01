@@ -6,4 +6,5 @@ export interface TypographyProps {
     weight?: string
     color?: string
     display?: string
+    lineHeight?: number 
 }

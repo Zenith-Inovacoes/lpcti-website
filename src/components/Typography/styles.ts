@@ -8,6 +8,7 @@ interface props {
   weight?: string
   color?: string
   display?: string
+  lineHeight?: number
 }
 
 function fontSizeByVariant(variant: string): string {
@@ -38,4 +39,5 @@ export const TypographyRoot = styled.p<props>`
   font-family: ${inter.style.fontFamily};
   color: ${(props) => (props.color == undefined ? "black" : props.color)};
   margin: 5px 0px;
+  line-height: ${(props) => (`${props.lineHeight}rem`)};
 `
