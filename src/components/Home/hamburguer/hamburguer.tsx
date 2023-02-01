@@ -81,13 +81,13 @@ function Hamburguer(this: any) {
               </Typography>
             </a>
           </li> */}
-          <li>
+          (/* <li>
             <a href="#partners" id="Contact">
               <Typography variant="h3" weight="500" color="#fff">
                 Parcerias
               </Typography>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#contato" id="Partner">
               <Typography variant="h3" weight="500" color="#fff">
