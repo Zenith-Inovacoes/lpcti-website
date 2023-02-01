@@ -106,13 +106,18 @@ export const cardPosition = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
   width: 100%;
   @media (min-width: 950px) {
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    > :last-child > :last-child > :first-child {
+      margin: 0rem 0rem 3rem 0rem;
+    }
+    > :last-child > :first-child{
+      transform: translateY(-21%)
+    }
   }
 `;
 export const divImage = styled.div`
@@ -123,5 +128,8 @@ export const divImage = styled.div`
   align-items: center;
   > img:not(:first-child) {
     position: absolute;
+  }
+  > :last-child {
+    position: absolute
   }
 `;
