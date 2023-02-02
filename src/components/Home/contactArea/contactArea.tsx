@@ -1,11 +1,5 @@
 import * as S from './contactArea-styles';
 import Typography from '@/components/Typography/Typography';
-import Card from '@/components/Card/Card';
-import instagram from '@/assets/icons/instagram-fill.svg'
-import mail from '@/assets/icons/envelope-fill.svg'
-import phone from '@/assets/icons/phone-fill.svg'
-import geo from '@/assets/icons/geo-alt-fill.svg'
-import SectionTitle from '@/components/SectionTitle';
 import wlpcti from '@/assets/images/LPCTI WHITE.png'
 import { UilEnvelope } from '@iconscout/react-unicons'
 import { UilPhone } from '@iconscout/react-unicons'
@@ -25,7 +19,7 @@ export default function ContactArea () {
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <UilMapMarker size={23}  /> 
-                        <a target="_blank" href="https://goo.gl/maps/oocn4UqYoXE63fN46"><Typography variant='h6' color='#FFF'>Av. Alcindo Cacela, 1523</Typography></a>
+                        <a target="_blank" href="https://goo.gl/maps/oocn4UqYoXE63fN46" rel='noreferrer'><Typography variant='h6' color='#FFF'>Av. Alcindo Cacela, 1523</Typography></a>
                     </S.typeContactsRow>
                     <S.typeContactsRow>
                         <UilPhone size={23} />
