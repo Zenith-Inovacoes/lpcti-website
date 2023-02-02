@@ -1,1 +1,0 @@
-Página Web e Mobile do Laboratório Paraense de Cidades e Tecnologias Inteligentes - LPCTI
