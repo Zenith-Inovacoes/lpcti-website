@@ -22,5 +22,3 @@ export default function MainSection() {
         </S.background>
     );
 }
-
-// #00C0F0

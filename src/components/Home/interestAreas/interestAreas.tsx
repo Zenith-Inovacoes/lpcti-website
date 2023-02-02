@@ -1,7 +1,7 @@
 import * as S from './interestAreas-styles';
 import Typography from '@/components/Typography/Typography';
 import Card from '@/components/Card/Card';
-import cicleCard from '@/assets/images/tech-circle.svg'
+import cicleCard from '@/assets/images/tech-circle.png'
 import userBackground from '@/assets/images/userBackground.svg'
 import { UilTrees } from '@iconscout/react-unicons'
 import { UilUniversity } from '@iconscout/react-unicons'
