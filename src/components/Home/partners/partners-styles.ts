@@ -20,20 +20,26 @@ export const divImage = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
+  width: 100%;
 `;
 export const zenithImage = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
   > img {
     height: auto;
-    width: 100%;
+    width: 10rem;
     filter: contrast(0.1);
   }
 `;
 
 export const cesupaImage = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
   > img {
-    height: 50px;
-    width: 100%;
+    height: auto;
+    width: 10rem;
     filter: contrast(0.1);
   }
 `;

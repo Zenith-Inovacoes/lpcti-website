@@ -2,8 +2,11 @@ import * as S from './interestAreas-styles';
 import Typography from '@/components/Typography/Typography';
 import Card from '@/components/Card/Card';
 import cicleCard from '@/assets/images/tech-circle.svg'
-import userIcon from '@/assets/icons/user-icon.svg'
 import userBackground from '@/assets/images/userBackground.svg'
+import { UilTrees } from '@iconscout/react-unicons'
+import { UilUniversity } from '@iconscout/react-unicons'
+import { UilBusSchool } from '@iconscout/react-unicons'
+import { UilChannel } from '@iconscout/react-unicons'
 import iot from '@/assets/images/IOT LINES 1.png'
 import iot2 from '@/assets/images/IOT LINES 2.png'
 import iot3 from '@/assets/images/IOT LINES 3 R.png'
@@ -32,7 +35,7 @@ export default function InterestAreas () {
                     <S.divImage>
                         <Image alt='tech circle' src={cicleCard}></Image>
                         <Image alt='background' src={userBackground} width={130}></Image>
-                        <Image alt='user icon' src={userIcon} width={70}></Image>
+                        <UilChannel size='60px' color='white'/>
                     </S.divImage>
                     <S.cardText>
                         <Typography variant='h3' color='#29156D'>Gerenciamento de Cidades Inteligentes</Typography>
@@ -45,7 +48,7 @@ export default function InterestAreas () {
                     <S.divImage>
                         <Image alt='tech circle' src={cicleCard}></Image>
                         <Image alt='background' src={userBackground} width={130}></Image>
-                        <Image alt='user icon' src={userIcon} width={70}></Image>
+                        <UilBusSchool size='60px' color='white'/>
                     </S.divImage>
                     <S.cardText>
                         <Typography variant='h3' color='#29156D'>Mobilidade Urbana</Typography>
@@ -58,12 +61,12 @@ export default function InterestAreas () {
                     <S.divImage>
                         <Image alt='tech circle' src={cicleCard}></Image>
                         <Image alt='background' src={userBackground} width={130}></Image>
-                        <Image alt='user icon' src={userIcon} width={70}></Image>
+                        <UilUniversity size='60px' color='white'/>
                     </S.divImage>
                     <S.cardText>
-                        <Typography variant='h3' color='#29156D'>Sustentabilidade</Typography>
+                        <Typography variant='h3' color='#29156D'>Sistemas educacionais inteligentes</Typography>
                         <Typography variant='h6' weight='250' color='#29156D'>
-                            As cidades inteligentes buscam reduzir seu impacto ambiental através da implementação de soluções sustentáveis, como fontes de energia renováveis, eficiência energética, transporte verde, gerenciamento de resíduos e conservação de água.
+                            As tecnologias de inteligência artificial e machine learning podem ser usadas para desenvolver sistemas educacionais inteligentes que possam personalizar o aprendizado de cada aluno, oferecer feedback em tempo real e avaliar o progresso dos alunos de maneira mais precisa.
                         </Typography>
                     </S.cardText>
                 </Card.Root>
@@ -71,12 +74,12 @@ export default function InterestAreas () {
                     <S.divImage>
                         <Image alt='tech circle' src={cicleCard}></Image>
                         <Image alt='background' src={userBackground} width={130}></Image>
-                        <Image alt='user icon' src={userIcon} width={70}></Image>
+                        <UilTrees size='60px' color='white'/>
                     </S.divImage>
                     <S.cardText>
-                        <Typography variant='h3' color='#29156D'>Sistemas educacionais inteligentes</Typography>
+                        <Typography variant='h3' color='#29156D'>Sustentabilidade</Typography>
                         <Typography variant='h6' weight='250' color='#29156D'>
-                            As tecnologias de inteligência artificial e machine learning podem ser usadas para desenvolver sistemas educacionais inteligentes que possam personalizar o aprendizado de cada aluno, oferecer feedback em tempo real e avaliar o progresso dos alunos de maneira mais precisa.
+                            As cidades inteligentes buscam reduzir seu impacto ambiental através da implementação de soluções sustentáveis, como fontes de energia renováveis, eficiência energética, transporte verde, gerenciamento de resíduos e conservação de água.
                         </Typography>
                     </S.cardText>
                 </Card.Root>
