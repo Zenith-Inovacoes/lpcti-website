@@ -21,6 +21,7 @@ export default createGlobalStyle`
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+        scroll-behavior: smooth;
     }
 
     article, aside, details, figcaption, figure, 
@@ -29,6 +30,8 @@ export default createGlobalStyle`
     }
     body {
         line-height: 1;
+        min-height: 100vh;
+        overflow-x: hidden;
     }
     ol, ul {
         list-style: none;
