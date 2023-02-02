@@ -17,7 +17,7 @@ export default function MainSection() {
                     O poder da tecnologia para transformar cidades: <em> a era das cidades inteligentes</em>
                     </Typography>
                 </S.divText>
-                <Image alt='cidade isométrica' src={fotinha} />
+                <Image alt='cidade isométrica' src={fotinha} priority={true}/>
             </S.sectionBackground>
         </S.background>
     );
