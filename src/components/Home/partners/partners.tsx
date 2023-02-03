@@ -16,10 +16,10 @@ export default function PartnersArea() {
             </SectionTitle>
             <S.divImage>
                 <S.zenithImage>
-                    <Image alt='zenith' src={zenithLogo} />
+                <a  target="_blank" href="https://zenithinova.com.br" rel='noreferrer'> <Image alt='zenith' src={zenithLogo} /></a>
                 </S.zenithImage>
                 <S.cesupaImage>
-                    <Image alt='cesupa' src={cesupaLogo} />
+                <a  target="_blank" href="https://www.cesupa.br" rel='noreferrer'><Image alt='cesupa' src={cesupaLogo} /></a>
                 </S.cesupaImage>
                 
             </S.divImage>
