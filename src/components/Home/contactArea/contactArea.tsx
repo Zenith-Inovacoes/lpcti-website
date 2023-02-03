@@ -33,7 +33,7 @@ export default function ContactArea () {
             </S.divRow>
             <S.authors>
                 <Typography variant='p' color='#FFF'>
-                    2023 © ZENITH. Todos os direitos reservados
+                    2023 © LPCTI. Todos os direitos reservados
                 </Typography>
             </S.authors>
         </S.background>

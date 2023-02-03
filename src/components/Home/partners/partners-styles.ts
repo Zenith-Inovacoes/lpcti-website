@@ -26,10 +26,15 @@ export const zenithImage = styled.div`
 width: 100%;
 display: flex;
 justify-content: center;
-  > img {
+  > a > img {
     height: auto;
     width: 10rem;
     filter: contrast(0.1);
+    transition: all .3s 
+  }
+  > a > :hover{
+    transform: scale(1.3);
+    transition: all .3s;
   }
 `;
 
@@ -37,9 +42,14 @@ export const cesupaImage = styled.div`
 width: 100%;
 display: flex;
 justify-content: center;
-  > img {
+  > a > img {
     height: auto;
     width: 10rem;
     filter: contrast(0.1);
+    transition: all .3s;
+  }
+  > a > :hover{
+    transform: scale(1.3);
+    transition: all .3s;
   }
 `;
