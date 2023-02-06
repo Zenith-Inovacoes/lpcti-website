@@ -8,11 +8,11 @@ import SectionTitle from '@/components/SectionTitle'
 import Typography from '@/components/Typography/Typography'
 import Card from '@/components/Card/Card'
 import Button from '@/components/Button'
-
 import Image from 'next/image'
 import Link from '@/components/Link'
 import NavBar from '../components/Home/navbar/navbar'
 import Hamburguer from '@/components/Home/hamburguer/hamburguer'
+import MembersSection from '@/components/Home/membersSection/membersSection'
 export default function Home() {
   return (
     <>
@@ -25,6 +25,7 @@ export default function Home() {
       <MainSection />
       <InterestAreas />
       <About />
+      <MembersSection />
       <PartnersArea />
       <ContactArea />
     </>
