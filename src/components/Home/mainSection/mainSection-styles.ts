@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import * as S from "@/components/Typography/styles";
 
+
 export const sectionBackground = styled.div`
   transform: skewY(-30deg);
   background: rgb(22, 25, 87);

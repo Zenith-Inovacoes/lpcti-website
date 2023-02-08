@@ -66,6 +66,8 @@ export const AboutText = styled.div`
   @media (min-width: 1200px) {
     > ${S.TypographyRoot}:not(:first-child) {
       font-size: 1rem;
+      text-justify: inter-word;
+      text-align: justify;
     }
   }
 `;
