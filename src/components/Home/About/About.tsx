@@ -2,6 +2,7 @@ import Typography from "@/components/Typography/Typography"
 import * as S from './styles'
 import CellphoneInternet from '@/assets/images/cellphone-internet.svg'
 import Image from "next/image"
+import Button from "@/components/Button"
 
 export default function About() {
     return (
