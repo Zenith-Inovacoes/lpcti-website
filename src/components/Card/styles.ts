@@ -5,11 +5,11 @@ interface props {
 }
 
 export const Card = styled.div<props>`
-    background-color: ${props => props.variant == 'primary' ? 'transparent' : '#161957'};
+    background-color: transparent;
     border-radius: ${props => props.variant == 'primary' ? '0' : '50px'};
     max-width: 400px;
-    padding: 10px 10px;
-    margin: 20px;
+    padding: ${props => props.variant == 'primary' ? '10px 10px' : 'none'};
+    margin: ${props => props.variant == 'primary' ? '20px' : 'none'};
     display: flex;
     justify-content: center;
     align-items: center;

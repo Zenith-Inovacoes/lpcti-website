@@ -37,7 +37,7 @@ export const divImage = styled.div`
 `;
 
 export const cardText = styled.div`
-  width: 60vw;
+  width: 30vw;
   height: auto;
   border-radius: 10%;
   > ${S.TypographyRoot} {
