@@ -1,10 +1,12 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import * as S from "@/components/Typography/styles";
 import * as C from "@/components/Card/styles";
 import * as B from "@/components/Button/styles";
 
 type props = {
   open: boolean;
+  index: number;
+  activeButton: number;
 };
 
 export const background = styled.div`
@@ -43,18 +45,21 @@ export const divText = styled.div`
   }
 `;
 
-export const cardText = styled.div`
+export const cardText = styled.div<props>`
   margin-right: 3.3rem;
   margin-left: 3.3rem;
   > ${S.TypographyRoot} {
     display: inline-block;
     margin: 20px 0;
-    :last-child {
-      max-height: 100px;
-      overflow: hidden;
-    }
   }
 `;
+
+export const typographyCard = styled(S.TypographyRoot)<props>`
+  
+  ${({activeButton, index}) => activeButton == index ? css<props>`
+  overflow: ${({open}) => open ? 'hidden' : 'visible'};` : null};
+`;
+
 export const iotImg = styled.div`
   width: 100%;
   position: absolute;
@@ -112,7 +117,7 @@ export const iotImgMax = styled.div`
   }
 `;
 
-export const cardPosition = styled.div<props>`
+export const cardPosition = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -123,17 +128,13 @@ export const cardPosition = styled.div<props>`
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    overflow-x: hidden;
+    overflow-X: hidden;
     > :last-child > :last-child > :nth-child(2) {
       margin: 0rem 0rem 3rem 0rem;
     }
     > :last-child > :first-child{
       transform: translateY(-21%)
     }
-  }
-  button svg{
-      transform: ${({ open }) => open ? 'rotate(0deg)' : 'rotate(180deg)'};
-      transition: transform .2s ease;
   }
 `;
 export const divImage = styled.div`
@@ -181,4 +182,15 @@ export const divImage = styled.div`
   > :last-child {
     position: absolute
   }
+`;
+
+export const ButtonCard = styled(B.ButtonWrapper)<props>`
+
+      ${({activeButton, index}) => activeButton == index ? css<props>`svg {
+        transform: ${({ open }) => open ? 'rotate(0deg)' : 'rotate(180deg)'};
+        transition: all .2s ease-in-out;
+      }`: null}
+
+      
+      
 `;

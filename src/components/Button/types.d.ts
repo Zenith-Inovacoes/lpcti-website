@@ -4,7 +4,7 @@ export interface ButtonProps {
     children: ReactNode
     variant: "rounded" | "text"
     open: boolean
-    setOpen: function
+    setOpen: Function
     text?: string
     setText: function
     index: number

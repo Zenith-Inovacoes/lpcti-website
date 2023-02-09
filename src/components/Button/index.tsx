@@ -3,7 +3,7 @@ import * as S from './styles'
 
 export function Button({children, variant, open, setOpen, setText}: ButtonProps) {
     return(
-        <S.ButtonWrapper variant={variant} onClick={() => {setOpen(!open), open ?  setText('Ler menos') : setText('Ler mais')}}>
+        <S.ButtonWrapper variant={variant} >
             {children}
         </S.ButtonWrapper>
     )
