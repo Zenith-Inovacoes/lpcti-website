@@ -3,33 +3,38 @@ import Lucas from '@/assets/images/Foto Lucas Gabriel.jpg'
 
 export const members = [
     {
-        Name: "Sergio",
+        Name: "Gabriel  Marcelino",
         MemberDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisi eu quam aliquam elementum. Pellentesque ultrices, est vitae pulvinar aliquam, diam lorem fermentum",
-        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' width={100} />/**foto do membro*/ 
+        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' />/**foto do membro*/ 
     },
     {
-        Name: "Fábio",
+        Name: "Caique Mauricio",
         MemberDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisi eu quam aliquam elementum. Pellentesque ultrices, est vitae pulvinar aliquam, diam lorem fermentum",
-        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' width={100}/>/**foto do membro*/ 
+        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' />/**foto do membro*/ 
     },
     {
-        Name: "Suzane",
+        Name: "João Renan",
         MemberDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisi eu quam aliquam elementum. Pellentesque ultrices, est vitae pulvinar aliquam, diam lorem fermentum",
-        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' width={100}/>/**foto do membro*/  
+        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' />/**foto do membro*/  
     },
     {
-        Name: "Tavares",
+        Name: "João Victor",
         MemberDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisi eu quam aliquam elementum. Pellentesque ultrices, est vitae pulvinar aliquam, diam lorem fermentum",
-        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' width={100}/>/**foto do membro*/
+        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' />/**foto do membro*/
     },
     {
-        Name: "Garoto Dinamico",
+        Name: "Matheus Tsuchiya",
         MemberDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisi eu quam aliquam elementum. Pellentesque ultrices, est vitae pulvinar aliquam, diam lorem fermentum",
-        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' width={100}/>/**foto do membro*/ 
+        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' />/**foto do membro*/ 
     },
     {
-        Name: "Mano Brian",
+        Name: "Rian Ernesto",
         MemberDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisi eu quam aliquam elementum. Pellentesque ultrices, est vitae pulvinar aliquam, diam lorem fermentum",
-        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' width={100}/>/**foto do membro*/
+        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' />/**foto do membro*/
+    },
+    {
+        Name: "Renan, Andrew",
+        MemberDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisi eu quam aliquam elementum. Pellentesque ultrices, est vitae pulvinar aliquam, diam lorem fermentum",
+        MemberPicture: () => <Image src={Lucas} alt='Foto de Membro do Laboratorio' />/**foto do membro*/
     },
 ]
