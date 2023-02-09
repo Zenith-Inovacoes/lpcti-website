@@ -55,9 +55,13 @@ export const cardText = styled.div<props>`
 `;
 
 export const typographyCard = styled(S.TypographyRoot)<props>`
-  
-  ${({activeButton, index}) => activeButton == index ? css<props>`
-  overflow: ${({open}) => open ? 'hidden' : 'visible'};` : null};
+   ${({activeButton, index}) => activeButton == index ? css<props>`svg {
+        overflow: ${({ open }) => open ? 'hidden' : 'visible'};
+        transition: all .2s ease-in-out;      
+      }`: css`svg {
+        transition: all .2s ease-in-out; 
+        overflow: hidden;
+      }`}
 `;
 
 export const iotImg = styled.div`
@@ -185,11 +189,13 @@ export const divImage = styled.div`
 `;
 
 export const ButtonCard = styled(B.ButtonWrapper)<props>`
-
+        
       ${({activeButton, index}) => activeButton == index ? css<props>`svg {
         transform: ${({ open }) => open ? 'rotate(0deg)' : 'rotate(180deg)'};
-        transition: all .2s ease-in-out;
-      }`: null}
+        transition: all .2s ease-in-out;      
+      }`: css`svg {
+        transition: all .2s ease-in-out; 
+      }`}
 
       
       

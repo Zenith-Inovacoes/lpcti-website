@@ -11,7 +11,6 @@ import Image from 'next/image'
 import { UilArrowDown } from '@iconscout/react-unicons'
 import { useState } from 'react'
 import { interestAreas } from '@/model/interest-areas'
-import Slider from 'react-slick'
 
 export default function InterestAreas() {
 
@@ -65,3 +64,4 @@ export default function InterestAreas() {
 
 
 
+            
