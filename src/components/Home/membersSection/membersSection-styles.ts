@@ -5,6 +5,9 @@ export const background = styled.div`
   width: 100%;
   margin-top: 7rem;
   justify-content: center;
+  > :first-child {
+    padding-bottom: 3rem;
+  }
 `;
 
 export const CarrosselBackground = styled.div`

@@ -9,36 +9,43 @@ import Typography from "@/components/Typography/Typography";
 export default function MembersSection () {
   return (
     <S.background id="partners">
-      <SectionTitle>
-        <Typography variant='h4' color='#29156D'>
-          Coordenadores
-        </Typography>
-      </SectionTitle>
-      {directors.map(({ Name, MemberPicture }, index) => (
-        <Card.Root variant="secondary" key={Name}>
-          <S.divImage>
-            <MemberPicture />
-          </S.divImage>
-          <S.cardText>
-            <Typography variant="h3" color="#000">
-              {Name}
-            </Typography>
-          </S.cardText>
-        </Card.Root>
-      ))}
-            <SectionTitle>
+      <SectionTitle >
         <Typography variant='h4' color='#29156D'>
           Membros
         </Typography>
       </SectionTitle>
-      <Carrossel.Root>
-        {members.map(({ Name, MemberPicture }, index) => (
+      <SectionTitle variant="secondary">
+        <Typography variant='h4' color='#FFF'>
+          Coordenadores
+        </Typography>
+      </SectionTitle>
+      <Carrossel.Root variant="primary">
+        {directors.map(({ Name, MemberPicture }, index) => (
           <Card.Root variant="secondary" key={Name}>
             <S.divImage>
               <MemberPicture />
             </S.divImage>
             <S.cardText>
               <Typography variant="h3" color="#000">
+                {Name}
+              </Typography>
+            </S.cardText>
+          </Card.Root>
+        ))}
+      </Carrossel.Root>
+      <SectionTitle variant="secondary">
+        <Typography variant='h4' color='#FFF'>
+          Membros
+        </Typography>
+      </SectionTitle>
+      <Carrossel.Root variant="secondary">
+        {members.map(({ Name, MemberPicture }, index) => (
+          <Card.Root variant="secondary" key={Name}>
+            <S.divImage>
+              <MemberPicture />
+            </S.divImage>
+            <S.cardText>
+              <Typography variant="h3" color="#29156D">
                 {Name}
               </Typography>
             </S.cardText>
