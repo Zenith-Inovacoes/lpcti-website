@@ -3,7 +3,7 @@ import * as S from "@/components/Typography/styles";
 
 export const background = styled.div`
   width: 100%;
-  margin-top: 7rem;
+  margin-top: 10rem ;
   justify-content: center;
 `;
 
@@ -12,16 +12,6 @@ export const CarrosselBackground = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-`
-
-export const directors = styled.div`
-display: flex;
-flex-direction: column;
-`
-
-export const MemberCard = styled.div`
-display: flex;
-flex-direction: column;
 `
 
 export const divImage = styled.div`
