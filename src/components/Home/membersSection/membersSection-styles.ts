@@ -14,6 +14,11 @@ export const CarrosselBackground = styled.div`
   justify-content: center;
 `
 
+export const directors = styled.div`
+display: flex;
+flex-direction: column;
+`
+
 export const MemberCard = styled.div`
 display: flex;
 flex-direction: column;
@@ -37,7 +42,7 @@ export const divImage = styled.div`
 `;
 
 export const cardText = styled.div`
-  width: 30vw;
+  width: calc(7vw + 150px);
   height: auto;
   border-radius: 10%;
   > ${S.TypographyRoot} {
