@@ -32,6 +32,13 @@ export const Carrossel = styled.div`
     border-radius: 10px;
     border: 3px solid #ffffff;
   }      /* color of the tracking area */
+  @media (max-width: 650px) {
+    justify-content: left;
+    margin: 0rem;
+  }
+  @media (min-width: 2800px) {
+    justify-content: center;
+  }
 `;
 
 export const CarrosselBtn = styled.div`
