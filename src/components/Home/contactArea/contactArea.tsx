@@ -1,6 +1,7 @@
 import * as S from './contactArea-styles';
 import Typography from '@/components/Typography/Typography';
 import wlpcti from '@/assets/images/LPCTI WHITE.png'
+import zenithLogo from '@/assets/images/Zenith_White.png'
 import { UilEnvelope } from '@iconscout/react-unicons'
 import { UilPhone } from '@iconscout/react-unicons'
 import { UilMapMarker } from '@iconscout/react-unicons'
@@ -35,6 +36,9 @@ export default function ContactArea () {
                 <Typography variant='p' color='#FFF'>
                     2023 © LPCTI. Todos os direitos reservados
                 </Typography>
+                <S.authorsRow>
+                <Typography variant='p' color='#FFF'> Desenvolvido por: </Typography><a  target="_blank" href="https://zenithinova.com.br" rel='noreferrer'><Typography variant='p' color='#ad32ff'> Zenith </Typography></a>
+                </S.authorsRow>
             </S.authors>
         </S.background>
     );

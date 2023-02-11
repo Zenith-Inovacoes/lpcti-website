@@ -33,8 +33,11 @@ justify-content: center;
     transition: all .3s 
   }
   > a > :hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition: all .3s;
+  }
+  @media (max-width: 800px) {
+    
   }
 `;
 
@@ -49,7 +52,7 @@ justify-content: center;
     transition: all .3s;
   }
   > a > :hover{
-    transform: scale(1.3);
+    transform: scale(1.05);
     transition: all .3s;
   }
 `;
