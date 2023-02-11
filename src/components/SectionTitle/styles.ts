@@ -4,10 +4,13 @@ interface props {
   variant?: string
 }
 
-export const SectionTitle = styled.div<props>`
-  display: ${props => props.variant == 'secondary' ? 'block' : 'flex'};
+  export const SectionTitle = styled.div<props>`
+  display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  background: rgb(19,21,95);
+  background: ${props => props.variant == 'secondary' ? 'radial-gradient(circle, rgba(20,22,94,1) 17%, rgba(0,192,240,0.5354516806722689) 50%, rgba(164,0,255,0) 87%)' : 'transparent'};
+  justify-content: ${props => props.variant == 'secondary' ? 'center' : 'space-between'};
+  border-radius: 50px;
   align-items: center;
   width: 100%;
   text-align: center;
