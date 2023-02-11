@@ -37,7 +37,7 @@ export default function ContactArea () {
                     2023 © LPCTI. Todos os direitos reservados
                 </Typography>
                 <S.authorsRow>
-                <Typography variant='p' color='#FFF'> Desenvolvido por: </Typography><a  target="_blank" href="https://zenithinova.com.br" rel='noreferrer'><Typography variant='p' color='#ad32ff'> Zenith </Typography></a>
+                <Typography variant='p' color='#FFF'> Desenvolvido por: </Typography><a  target="_blank" href="https://zenithinova.com.br" rel='noreferrer'><Typography variant='p' color='#ad32ff'> Zenith Inova</Typography></a>
                 </S.authorsRow>
             </S.authors>
         </S.background>
