@@ -1,35 +1,26 @@
 import styled from "styled-components";
 
 export const Carrossel = styled.div`
-  max-width: 90vw;
+  max-width: 100vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #00c0f0 #ffffff;
-  }
+  flex: none;
+  ::-webkit-scrollbar{
+    background-color: #00C0F0;
+    border-radius: 20px;
+    height: 1.3vh;
+    width: 90vw;
 
-  /* Chrome, Edge, and Safari */
-  ::-webkit-scrollbar {
-    width: 16px;
   }
-
-  ::-webkit-scrollbar-track {
-    background: black;
+  ::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 20px;
   }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #00c0f0;
-    border-radius: 10px;
-    border: 3px solid #161957;
-  } 
+  body::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
 `;
 
 export const CarrosselBtn = styled.div`
 `
-
-
-
