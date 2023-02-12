@@ -40,13 +40,13 @@ function NavBar() {
             </Typography>
           </a>
         </li> */}
-        {/* <li>
-          <a href="#partners">
+        <li>
+          <a href="#members">
             <Typography variant="h6" weight="0" color="#fff">
-              Parcerias
+              Membros
             </Typography>
           </a>
-        </li> */}
+        </li>
         <li>
           <a href="#contato">
             <Typography variant="h6" weight="0" color="#fff">

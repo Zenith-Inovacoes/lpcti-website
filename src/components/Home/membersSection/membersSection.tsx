@@ -8,7 +8,7 @@ import Typography from "@/components/Typography/Typography";
 
 export default function MembersSection () {
   return (
-    <S.background id="partners">
+    <S.background id="members">
       <SectionTitle >
         <Typography variant='h4' color='#29156D'>
           Membros
