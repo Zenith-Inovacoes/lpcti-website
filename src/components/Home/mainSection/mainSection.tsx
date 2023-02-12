@@ -1,6 +1,6 @@
 import * as S from "./mainSection-styles";
 import Typography from "@/components/Typography/Typography";
-import fotinha from "../../../assets/images/Isometric City Recort.png";
+import fotinha from "../../../assets/images/iso-city-1.svg";
 import Image from "next/image";
 import { useEffect } from "react";
 

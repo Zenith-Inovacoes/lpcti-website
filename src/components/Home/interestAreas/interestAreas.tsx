@@ -1,7 +1,7 @@
 import * as S from './interestAreas-styles';
 import Typography from '@/components/Typography/Typography';
 import Card from '@/components/Card/Card';
-import cicleCard from '@/assets/images/tech-circle.svg'
+import cicleCard from '@/assets/images/circle-tech-5.svg'
 import userBackground from '@/assets/images/userBackground.svg'
 import { UilTrees } from '@iconscout/react-unicons'
 import { UilUniversity } from '@iconscout/react-unicons'
@@ -12,8 +12,17 @@ import iot2 from '@/assets/images/IOT LINES 2.png'
 import iot3 from '@/assets/images/IOT LINES 3 R.png'
 import iot4 from '@/assets/images/IOT LINES 4 L.png'
 import Image from 'next/image';
+import { Button } from '@/components/Button';
+import { UilArrowDown } from '@iconscout/react-unicons';
+import { useState } from 'react';
+import { interestAreas } from '@/model/interest-areas';
 
-export default function InterestAreas () {
+export default function InterestAreas() {
+
+    const [open, setOpen] = useState(true);
+    const [text, setText] = useState('Ler mais');
+
+
 
     return (
         <S.background id='interestAreas'>
@@ -30,59 +39,22 @@ export default function InterestAreas () {
                     Áreas de <em> interesse</em>
                 </Typography>
             </S.divText>
-            <S.cardPosition>
-                <Card.Root variant='primary'>
+            <S.cardPosition open={open}>
+                {interestAreas.map(({cardDesc, cardTitle, CardIcon}, index) => (
+                <Card.Root variant='primary' key={cardTitle}>
                     <S.divImage>
                         <Image alt='tech circle' src={cicleCard}></Image>
                         <Image alt='background' src={userBackground} width={130}></Image>
-                        <UilChannel size='60px' color='white'/>
+                        <CardIcon/>
                     </S.divImage>
                     <S.cardText>
-                        <Typography variant='h3' color='#29156D'>Gerenciamento de Cidades Inteligentes</Typography>
+                        <Typography variant='h3' color='#29156D'>{cardTitle}</Typography>
                         <Typography variant='h6' weight='250' color='#29156D'>
-                            Este é um aspecto crucial da cidade inteligente, envolvendo a implementação de tecnologias e soluções para melhorar a eficiência dos serviços públicos, incluindo transporte, iluminação pública, gerenciamento de resíduos, segurança cidadã, entre outros.
+                            {cardDesc}
                         </Typography>
                     </S.cardText>
-                </Card.Root>
-                <Card.Root variant='primary'>
-                    <S.divImage>
-                        <Image alt='tech circle' src={cicleCard}></Image>
-                        <Image alt='background' src={userBackground} width={130}></Image>
-                        <UilBusSchool size='60px' color='white'/>
-                    </S.divImage>
-                    <S.cardText>
-                        <Typography variant='h3' color='#29156D'>Mobilidade Urbana</Typography>
-                        <Typography variant='h6' weight='250' color='#29156D'>
-                            A mobilidade é um dos desafios mais importantes das cidades modernas e a tecnologia inteligente pode ser utilizada para melhorar a experiência dos usuários e a eficiência do transporte, incluindo soluções como transporte autônomo, sistemas de informação para usuários de transporte e integração de diferentes modos de transporte.
-                        </Typography>
-                    </S.cardText>
-                </Card.Root>
-                <Card.Root variant='primary'>
-                    <S.divImage>
-                        <Image alt='tech circle' src={cicleCard}></Image>
-                        <Image alt='background' src={userBackground} width={130}></Image>
-                        <UilUniversity size='60px' color='white'/>
-                    </S.divImage>
-                    <S.cardText>
-                        <Typography variant='h3' color='#29156D'>Sistemas educacionais inteligentes</Typography>
-                        <Typography variant='h6' weight='250' color='#29156D'>
-                            As tecnologias de inteligência artificial e machine learning podem ser usadas para desenvolver sistemas educacionais inteligentes que possam personalizar o aprendizado de cada aluno, oferecer feedback em tempo real e avaliar o progresso dos alunos de maneira mais precisa.
-                        </Typography>
-                    </S.cardText>
-                </Card.Root>
-                <Card.Root variant='primary'>
-                    <S.divImage>
-                        <Image alt='tech circle' src={cicleCard}></Image>
-                        <Image alt='background' src={userBackground} width={130}></Image>
-                        <UilTrees size='60px' color='white'/>
-                    </S.divImage>
-                    <S.cardText>
-                        <Typography variant='h3' color='#29156D'>Sustentabilidade</Typography>
-                        <Typography variant='h6' weight='250' color='#29156D'>
-                            As cidades inteligentes buscam reduzir seu impacto ambiental através da implementação de soluções sustentáveis, como fontes de energia renováveis, eficiência energética, transporte verde, gerenciamento de resíduos e conservação de água.
-                        </Typography>
-                    </S.cardText>
-                </Card.Root>
+                    <Button variant={'text'} open={open} setOpen={setOpen} text={text} setText={setText} index={0}>{text} <UilArrowDown /></Button>
+                </Card.Root>))}
             </S.cardPosition>
         </S.background>
     );

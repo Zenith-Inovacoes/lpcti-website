@@ -54,6 +54,15 @@ height: 4rem;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-direction: column;
+`
+export const authorsRow = styled.div`
+display: flex;
+flex-direction: row;
+> a{
+  text-decoration: none;
+  padding-left: 0.3rem;
+}
 `
 
 export const typeContactsColumn = styled.div`
