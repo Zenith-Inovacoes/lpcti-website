@@ -15,6 +15,7 @@ export const background = styled.div`
   padding-top: 7rem;
   padding-bottom: 1rem;
   position: relative;
+  transition: all .5s ease;
   /* z-index: -1 !important; */
   @media (min-width: 650px) {
     padding-top: 1rem;
@@ -31,6 +32,7 @@ export const divText = styled.div`
   min-width: 21.875rem;
   padding: 2.5rem 4.5rem;
   padding-bottom: 0;
+  transition: all .5s ease;
   > ${S.TypographyRoot} {
     display: inline-block;
     margin-top: 20px;
@@ -45,9 +47,10 @@ export const divText = styled.div`
   }
 `;
 
-export const cardText = styled.div<props>`
+export const cardText = styled.div`
   margin-right: 3.3rem;
   margin-left: 3.3rem;
+  transition: all .5s ease;
   > ${S.TypographyRoot} {
     display: inline-block;
     margin: 20px 0;
@@ -55,14 +58,26 @@ export const cardText = styled.div<props>`
 `;
 
 export const typographyCard = styled(S.TypographyRoot)<props>`
-   ${({activeButton, index}) => activeButton == index ? css<props>`svg {
-        overflow: ${({ open }) => open ? 'hidden' : 'visible'};
-        transition: all .2s ease-in-out;      
-      }`: css`svg {
-        transition: all .2s ease-in-out; 
-        overflow: hidden;
-      }`}
+  display: flex;
+  text-align: left;
+  transition: all .5s ease;
+  height: 100px;
+  overflow: hidden;
+  animation: show-overflow 2s;
+  ${({activeButton, index, open}) => activeButton == index ? css<props>`
+    height: ${open ? 'auto' : '100px'};
+    overflow: ${open ? 'visible' : 'hidden'};
+    
+    transition: all .2s ease-in-out;
+  ` : css`
+    transition: all .2s ease-in-out;
+  `};
+
+  @keyframes show-overflow {
+  from { overflow: hidden; }
+}
 `;
+
 
 export const iotImg = styled.div`
   width: 100%;
@@ -127,14 +142,16 @@ export const cardPosition = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  transition: all .5s ease;
   @media (min-width: 950px) {
     width: 50%;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    overflow-X: hidden;
+    overflow-x: hidden;
     > :last-child > :last-child > :nth-child(2) {
       margin: 0rem 0rem 3rem 0rem;
+      transform: translateX(30px);
     }
     > :last-child > :first-child{
       transform: translateY(-21%)
@@ -177,26 +194,20 @@ export const divImage = styled.div`
     }
   }
 
-  @keyframes return {
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
   > :last-child {
     position: absolute
   }
 `;
 
 export const ButtonCard = styled(B.ButtonWrapper)<props>`
-        
+        position: relative;
       ${({activeButton, index}) => activeButton == index ? css<props>`svg {
-        transform: ${({ open }) => open ? 'rotate(0deg)' : 'rotate(180deg)'};
-        transition: all .2s ease-in-out;      
+        transform: ${({ open }) => !open ? 'rotate(0deg)' : 'rotate(180deg)'};
+        transition: all .5s ease;      
       }`: css`svg {
-        transition: all .2s ease-in-out; 
+        transition: all .5s ease;
       }`}
-
+      
       
       
 `;

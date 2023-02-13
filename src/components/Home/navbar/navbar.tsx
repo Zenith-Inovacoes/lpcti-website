@@ -8,9 +8,9 @@ import Link from "next/link";
 function NavBar() {
   return (
     <S.Container>
-      <S.imgContainer>
+      <S.ImgContainer>
         <Image height={100} width={100} alt="Logo do LPCTI" src={LCPTI_Logo} />
-      </S.imgContainer>
+      </S.ImgContainer>
       <ul>
         <li>
           <a href="#home">

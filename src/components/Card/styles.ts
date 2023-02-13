@@ -15,6 +15,8 @@ export const Card = styled.div<props>`
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    transform: translateX(360px);
+    transition: all ease 1s;
 `
 export const CardHeader = styled.div`
     padding: 10px 0px;

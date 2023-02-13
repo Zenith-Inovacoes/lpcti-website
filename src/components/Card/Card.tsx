@@ -3,7 +3,7 @@ import * as S from './styles'
 
 function CardRoot({children, variant}: CardRootProps) {
     return(
-        <S.Card variant={variant}>
+        <S.Card variant={variant} className="card">
             {children}
         </S.Card>
     )
