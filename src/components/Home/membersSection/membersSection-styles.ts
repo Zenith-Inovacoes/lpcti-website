@@ -27,6 +27,22 @@ display: flex;
 flex-direction: column;
 `
 
+export const memberDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 0;
+  opacity: 0;
+  transition: 0.5s ease;
+`;
+
 export const divImage = styled.div`
   align-items: center;
   border-radius: 50%;
@@ -41,6 +57,13 @@ export const divImage = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
+  }
+  &:hover {
+    > ${memberDetails} {
+      opacity: 70%;
+      height: 100%;
+    }
   }
 `;
 

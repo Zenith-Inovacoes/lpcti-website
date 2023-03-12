@@ -4,6 +4,7 @@ import * as S from "./membersSection-styles";
 import SectionTitle from '@/components/SectionTitle';
 import Carrossel from "@/components/Carrossel/Carrossel"
 import Typography from "@/components/Typography/Typography";
+import { UilLinkedin } from "@iconscout/react-unicons";
 
 
 export default function MembersSection () {
@@ -20,10 +21,15 @@ export default function MembersSection () {
         </Typography>
       </SectionTitle>
       <Carrossel.Root variant="primary">
-        {directors.map(({ Name, MemberPicture }, index) => (
+        {directors.map(({ Name, MemberPicture, Linkedin }, index) => (
           <Card.Root variant="secondary" key={Name}>
             <S.divImage>
               <MemberPicture />
+              <S.memberDetails>
+                <a href={Linkedin} target="_blank" rel="noreferrer">
+                  <UilLinkedin color="#FFF" size={30} />
+                </a>
+              </S.memberDetails>
             </S.divImage>
             <S.cardText>
               <Typography variant="h3" color="#000">
@@ -39,10 +45,15 @@ export default function MembersSection () {
         </Typography>
       </SectionTitle>
       <Carrossel.Root variant="secondary">
-        {members.map(({ Name, MemberPicture }, index) => (
+        {members.map(({ Name, MemberPicture, Linkedin }, index) => (
           <Card.Root variant="secondary" key={Name}>
             <S.divImage>
               <MemberPicture />
+              <S.memberDetails className="details">
+                <a href={Linkedin} target="_blank" rel="noreferrer">
+                  <UilLinkedin color="#FFF" size={30} />
+                </a>
+              </S.memberDetails>
             </S.divImage>
             <S.cardText>
               <Typography variant="h3" color="#29156D">
