@@ -89,7 +89,7 @@ margin: 0.5rem;
 :hover * {
   color: #00C0F0;
 }
-@media (min-width: 900px){
+@media (max-width: 900px){
   > a {
   > ${S.TypographyRoot} {
       text-align: left;
