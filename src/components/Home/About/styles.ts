@@ -70,6 +70,18 @@ export const AboutText = styled.div`
       text-align: justify;
     }
   }
+
+  @media (max-width: 1200px) {
+    > ${S.TypographyRoot}:not(:first-child) {
+      font-size: .8rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    > ${S.TypographyRoot}:not(:first-child) {
+      font-size: .7rem;
+    }
+  }
 `;
 
 export const FixSkew = styled.div`
