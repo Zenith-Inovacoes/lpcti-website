@@ -57,6 +57,7 @@ export const divImage = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
   }
   &:hover {
     > ${memberDetails} {
