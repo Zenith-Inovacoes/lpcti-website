@@ -79,7 +79,7 @@ export const AboutText = styled.div`
 
   @media (max-width: 500px) {
     > ${S.TypographyRoot}:not(:first-child) {
-      font-size: .65rem;
+      font-size: .7rem;
     }
   }
 `;
